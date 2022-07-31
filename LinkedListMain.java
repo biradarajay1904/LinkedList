@@ -1,17 +1,28 @@
 package com.LinkedList;
 
+
+
 public class LinkedListMain {
-    public static void main(String[] args) {
-    	 LinkedList<Integer> linkedList = new LinkedList<>();
 
-         Node<Integer> node = new Node<>(56);
-         linkedList.head = node;
-         Node<Integer> node1 = new Node<>(30);
-         node.next = node1;
-         Node<Integer> node2 = new Node<>(70);
-         node1.next = node2;
-         linkedList.display();
+	    public static void main(String[] args) {
+	    	
+	        LinkedList<Integer> linkedList = new LinkedList<>();
+	        linkedList.push(70);
+	        linkedList.push(30);
+	        linkedList.push(56);
 
 
-    }
-}
+	        linkedList.print();
+	        System.out.println();
+
+	        LinkedList<Integer> linkedList1 = new LinkedList<>();
+
+	        linkedList1.add(70);
+	        linkedList1.add(30);
+	        linkedList1.add(56);
+
+	        linkedList1.print();
+
+
+	    }
+	}
